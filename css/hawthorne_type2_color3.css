@@ -621,7 +621,7 @@ nav ul li a, nav ul li a:hover {
 
 /* line 324, ../scss/_custom.scss */
 a.current {
-  color: #8a8988;
+  color: #282828;
   pointer-events: none;
 }
 
