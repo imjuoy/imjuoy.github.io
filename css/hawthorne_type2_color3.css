@@ -623,6 +623,7 @@ nav ul li a, nav ul li a:hover {
 a.current {
   color: #282828;
   pointer-events: none;
+  font-weight: bold;
 }
 
 /* line 329, ../scss/_custom.scss */
