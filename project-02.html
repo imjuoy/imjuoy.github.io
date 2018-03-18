@@ -45,11 +45,30 @@ Set the type and color theme here - the Pro version contains additional themes -
 
 <div class="row">
 	<div class="small-12 medium-7 large-7 columns">
-		<h2>N-GRAM MODELLING USING BATCH PROCESSING</h2>
+		<h2>INPUT TEXT PREDICTOR</h2>
 		<br>
 		<p>
-			
+		Certain studies have shown that millenials are too lazy to enter the complete search text for searching. This has led popular search engines such as Google to implement input text to assist users in framing search queries.
 		</p>
+		<p>
+		This project was aimed towards the implementation of a similar input text predictor from Wikipedia dataset using Map Reduce batch processing. The input text predictor was based on a language model called N-gram. As can be seen in the diagram below, an N-gram model is used to store probabilities of a word appearing after a phrase, by dividing the phrase into unigram (N = 1), bigrams (N=2), et al. Based on the probabilities and N, words are suggested to the user.
+		</p>
+		<p>
+		As a part of this project, I parsed XML tags from the wikipedia dataset, cleaned the resulting dataset by removing URL's or similar extraneous data and then passed the data to a map reduce program to generate n-grams for the input text. Once the n-gram model was generated, I used probability calculation to store the conditional probability of every n-gram in <b>HBase</b>. Finally this backend implementation was connected to a PHP front-end to replicate a search engine such as Google.
+		As a part of an additional task, I also implemented a Redis in-memory cache to improve system performance by reducing database calls for every search request.
+		</p>
+		<p>
+	    <h3>Technologies Used:</h3>	
+	    <ul>
+	    <li>AWS EMR CLUSTER</li>
+	    <li>HADOOP 2.7.3</li>
+	    <li>JAVA 8</li>
+	    <li>AWS S3</li> 
+	    <li>HBase</li>
+	    <li>PHP</li>
+	    <li>AWS ElasticCache for Redis</li>	
+	    </ul>	
+		</p>	
 	</div>
 	<div class="small-12 medium-5 large-5 columns">
 		<div class="lined-list">
@@ -69,25 +88,10 @@ Set the type and color theme here - the Pro version contains additional themes -
 		
 		<!-- Begin project image -->
 		<div class="project-img">
-			<img src="img/projects/project-01a.png" alt="Project 01a" />
-			<h6>Project 01a Caption</h6>
+			<img src="img/projects/Unigram.png" alt="Project 01a" />
+			<h6>Source: http://recognize-speech.com/language-model/n-gram-model/comparison</h6>
 		</div>
 		<!-- End project image -->
-		
-		<!-- Begin project image -->
-		<div class="project-img">
-			<img src="img/projects/project-01b.png" alt="Project 01b" />
-			<h6>Project 01b Caption</h6>
-		</div>
-		<!-- End project image -->
-		
-		<!-- Begin project image -->
-		<div class="project-img">
-			<img src="img/projects/project-01c.png" alt="Project 01c" />
-			<h6>Project 01c Caption</h6>
-		</div>
-		<!-- End project image -->
-		
 	</div>
 </div>
 
