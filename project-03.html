@@ -50,19 +50,21 @@ Set the type and color theme here - the Pro version contains additional themes -
 		Technology boom has exponentially increased the number of online applications. However online marketing has made it harder for the new as well as existing applications to target the right users for capturing the market. While majority illusion can be attributed for the success of latest applications, starting off by targeting influential users has still continued on of the primary marketing strategy. Iterative data processing using Spark is one such methodology that can be used to find influential users in a exponentially increasing social graph of users.
 		</p>
 		<p>
-		As a part of this project I primarily worked on a 10.4 GB of Twitter Social Graph dataset which contained a twitter user id and the id of the users that they followed. Firstly I used Spark RDD and Spark DataFrames to generate the number of followers of each user and also calculate the number of edges and vertices of the social graph data. Secondly I worked on the implementation of the <b>PageRank algorithm</b>  
+		As a part of this project I primarily worked on a 10.4 GB of Twitter Social Graph dataset which contained a twitter user id and the id of the users that they followed. Firstly I used Spark RDD and Spark DataFrames to generate the number of followers of each user and also calculate the number of edges and vertices of the social graph data. Secondly I worked on the implementation of <b><a href="https://pdfs.semanticscholar.org/df94/85f84e9b3c62d04ea2bece3e5afe061f8432.pdf">PageRank algorithm</a></b> to rank each user based on their influence.  
 		</p>
 		<p>
-	    In addition to the android application, I also created a basic data analytics page which can be used to view most searched cities, most preferred sort parameters and would also maintain a log of all requests and response. The webpage is currently deployed into Heroku. You can view it <a href="https://enigmatic-bayou-74965.herokuapp.com/AnalyticsController">here.</a>
+	    After calculating the user influence, I used <b><a href="https://spark.apache.org/docs/latest/graphx-programming-guide#summary-list-of-operators">Spark GraphX</a> </b>library to calculate the second degree influential scores of nodes in the social graph to include nodes that might not be connected with the rest of the nodes in the graph.
 		</p>
 		<p>
 	    <h3>Technologies Used:</h3>	
 	    <ul>
-	    <li>HEROKU PAAS</li>
-	    <li>ANDROID NOUGAT</li>
-	    <li>MONGO DB</li>
-	    <li>SERVLET</li> 
-	    <li>REST</li>
+	    <li>AWS EMR CLUSTERS</li>
+	    <li>SPARK 2.2.0</li>
+	    <li>SPARK SHELL</li>
+	    <li>SPARK GRAPHX</li> 
+	    <li>SPARK ACCUMULATORS</li>
+	    <li>MAVEN</li>
+	    <li>JAVA</li>
 	    </ul>	
 		</p>	
 	</div>
@@ -84,30 +86,8 @@ Set the type and color theme here - the Pro version contains additional themes -
 		
 		<!-- Begin project image -->
 		<div class="project-img">
-			<img src="img/projects/Project3_a.png" alt="Project 03a"  width="38%" />
-			<h6>The selection parameters</h6>
-		</div>
-		<!-- End project image -->
-		
-		<!-- Begin project image -->
-		<div class="project-img">
-			<img src="img/projects/Project3_d.png" alt="Project 03b" width="38%" />
-			<h6>Cities served by the App</h6>
-		</div>
-		<!-- End project image -->
-		
-		<!-- Begin project image -->
-		<div class="project-img">
-			<img src="img/projects/Project3_b.png" alt="Project 03b" width="38%" />
-			<h6>Ascending Order Of Rating</h6>
-		</div>
-		<div class="project-img">
-			<img src="img/projects/Project3_e.png" alt="Project 03e" width="38%" />
-			<h6>Descending Order Of Rating</h6>
-		</div>
-		<div class="project-img">
-		<img src="img/projects/Project3_c.png" alt="Project 03c" width="80%" />
-			<h6>Mongo DB Implementation in Heroku</h6>
+			<img src="img/projects/Project3_Spark.png" alt="Project 03a"  width="60%" />
+			<h6>Source: https://www.edureka.co/blog/apache-spark-vs-hadoop-mapreduce</h6>
 		</div>
 		<!-- End project image -->
 	</div>
