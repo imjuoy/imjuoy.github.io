@@ -47,8 +47,22 @@ Set the type and color theme here - the Pro version contains additional themes -
 	<div class="small-12 medium-7 large-7 columns">
 		<h2></h2>
 		<p>
-			Check out the <a href="http://www.typeandgrids.com/support" target="_blank">Getting Started Guide and FAQ <i class="fa fa-external-link"></i></a> for lots of helpful tips. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sed lacus id sem pellentesque imperdiet. Morbi magna arcu, aliquam sit amet arcu id, feugiat ultrices felis. Aliquam laoreet rutrum diam, eget mattis odio imperdiet in. Quisque in felis et neque fermentum volutpat.
+			Real Time Cab matching services such as Lyft and Uber use stream processing technologies such as Kafka and Samza for processing real-time GPS data.
+			This project was aimed at understanding the underlying backend implementation of Taxi services/ companies that have to deal with processing large chunks of data at real time. 
+	    </p>
+	    <p>
+			As a part of the coursework I was provided with large data-sets which had to be partitioned into topics using the Kafka broker. Once the stream had been accomplished, I wrote a Samza program that would consume the data from Kafka.
+			I further used the data on a customized algorithm which matched drivers and customers based on their distance, customers gender preferences and several other parameters. The final result was then relayed to a javascript front-end to enable a stream visualization similar to that of Uber/Lyft.
 		</p>
+		<p>
+	    <h3>Technologies Used:</h3>	
+	    <ul>
+	    <li>AWS EMR CLUSTER</li>
+	    <li>APACHE KAFKA</li>
+	    <li>APACHE SAMZA</li>
+	    <li>Node JS</li> 	
+	    </ul>	
+		</p>	
 	</div>
 	<div class="small-12 medium-5 large-5 columns">
 		<div class="lined-list">
@@ -68,25 +82,11 @@ Set the type and color theme here - the Pro version contains additional themes -
 		
 		<!-- Begin project image -->
 		<div class="project-img">
-			<img src="img/projects/project-01a.png" alt="Project 01a" />
-			<h6>Project 01a Caption</h6>
+			<img src="http://eng.uber.com/wp-content/uploads/2016/08/image00.png" alt="Project 01a" />
+			<h6>Source: https://eng.uber.com/ureplicator/</h6>
 		</div>
 		<!-- End project image -->
-		
-		<!-- Begin project image -->
-		<div class="project-img">
-			<img src="img/projects/project-01b.png" alt="Project 01b" />
-			<h6>Project 01b Caption</h6>
-		</div>
-		<!-- End project image -->
-		
-		<!-- Begin project image -->
-		<div class="project-img">
-			<img src="img/projects/project-01c.png" alt="Project 01c" />
-			<h6>Project 01c Caption</h6>
-		</div>
-		<!-- End project image -->
-		
+			
 	</div>
 </div>
 
@@ -100,8 +100,8 @@ Set the type and color theme here - the Pro version contains additional themes -
 	<div class="small-12 medium-12 large-12 columns">
 		<footer>
 			<ul>
-				<li>&copy; 2014 <a href="index.html">Your Name Here</a>. All rights reserved.</li>
-				<li><a href="mailto:hello@yourname.com"><i class="fa fa-envelope-o"></i> hello@yourname.com</a></li>
+				<li>&copy; 2018 <a href="index.html">Subhadeep Bhattacharyya</a>. All rights reserved.</li>
+				<li><a href="mailto:hello@yourname.com"><i class="fa fa-envelope-o"></i> hello@subhadeepbhattacharyya.com</a></li>
 				
 				<!-- *****************************************************************************************
 				The "Powered by Type & Grids" link in the footer is required in the Free version
@@ -111,8 +111,10 @@ Set the type and color theme here - the Pro version contains additional themes -
 				
 			</ul>
 			<div class="social-icons">
-				<a href="http://www.twitter.com/typeandgrids" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
-				<a href="http://www.facebook.com/typeandgrids" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+				<a href="https://www.linkedin.com/in/subhadeep-bhattacharyya-13168428/"><i class="fa fa-linkedin fa-2x"></i></a>
+				<a href="https://twitter.com/ImJuoy" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
+				<a href="http://www.facebook.com/Subhadeep.Bhattacharyya.15" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
+				<a href="http://www.instagram.com/imjuoy" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
 			</div>
 		</footer>
 	</div>
