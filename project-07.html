@@ -4,7 +4,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title> Social Network Backend&mdash; </title>
+<title> Restaurant Finder &mdash;</title>
 <meta name="description" content="Page description goes here">
 
 <!-- ******************************************************************************************
@@ -45,28 +45,26 @@ Set the type and color theme here - the Pro version contains additional themes -
 
 <div class="row">
 	<div class="small-12 medium-7 large-7 columns">
-		<h2>A SOCIAL NETWORK'S BACKEND</h2>
+		<h2>Top Restaurant in a City</h2>
 		<p>
-		Social Network's have grown in numbers and users. With the proliferation of internet penetration, they are expected to cater to increasing number of users per second. This requires well-designed backend systems which will be able to cater different kinds of user query, store heterogenous data and provide fast performance with low latency. This project aims to understand the backend implementation of Reddit.com, a social networking site which promotes collaboration through discussion threads.
+		As a part of this coursework project, I designed a native Android application, that will find the top restaurant in a city of user's choice based on their sorting criteria and sorting order. For building this application I extended the <b><a href="https://www.zomato.com">Zomato</a> <a href="https://developers.zomato.com/api">API</a></b> and accessed it through REST calls using a webservice deployed on <b><a href="https://www.heroku.com">Heroku</a></b>.
 		</p>
 		<p>
-		As a part of this project, I implemented the user login process by using AWS RDS (Relation Database System) for hosting a MySQL database to store user id and password. Once the user logged in, their follower data was retrieved from HBase (a column family database). The homepage for a user which contained comment as parent threads along with discussions as child threads was implemented using Mongo DB (a document store database). Finally all these bits and peices were put together as a single backend service to implement Reddit-like social networking application.
+		The Android application would make <b>REST</b> calls to the webservice passing the values selected by the user as query parameters along with device model and android version. Once the data was recieved by the webservice, it would store the parsed Json data in Mongo DB and pass the response to the Android application as an XML. The Android application would parse the XML to display the final results to the user. 
 		</p>
 		<p>
-		Finally a recommendation system was implemented using Collaborative filtering.
+	    In addition to the android application, I also created a basic data analytics page which can be used to view most searched cities, most preferred sort parameters and would also maintain a log of all requests and response. The webpage is currently deployed into Heroku. You can view it <a href="https://enigmatic-bayou-74965.herokuapp.com/AnalyticsController">here.</a>
 		</p>
 		<p>
 	    <h3>Technologies Used:</h3>	
 	    <ul>
-	    <li>AWS EMR CLUSTERS</li>
-	    <li>AWS EC2</li>
-	    <li>AWS RDS - MySQL</li>
-	    <li>HBase</li>
-	    <li>AWS S3</li> 
-	    <li>Mongo DB</li>
-	    <li>Java</li>
+	    <li>HEROKU PAAS</li>
+	    <li>ANDROID NOUGAT</li>
+	    <li>MONGO DB</li>
+	    <li>SERVLET</li> 
+	    <li>REST</li>
 	    </ul>	
-		</p>
+		</p>	
 	</div>
 	<div class="small-12 medium-5 large-5 columns">
 		<div class="lined-list">
@@ -86,18 +84,33 @@ Set the type and color theme here - the Pro version contains additional themes -
 		
 		<!-- Begin project image -->
 		<div class="project-img">
-			<img src="img/projects/project4_3.png" alt="Project 01a" width="75%" />
-			<h6>The dummy Reddit</h6>
+			<img src="img/projects/Project3_a.png" alt="Project 03a"  width="38%" />
+			<h6>The selection parameters</h6>
 		</div>
 		<!-- End project image -->
 		
 		<!-- Begin project image -->
 		<div class="project-img">
-			<img src="img/projects/project4_4.png" alt="Project 01b" width="75%"/>
-			<h6>The recommendation service</h6>
+			<img src="img/projects/Project3_d.png" alt="Project 03b" width="38%" />
+			<h6>Cities served by the App</h6>
 		</div>
 		<!-- End project image -->
+		
+		<!-- Begin project image -->
+		<div class="project-img">
+			<img src="img/projects/Project3_b.png" alt="Project 03b" width="38%" />
+			<h6>Ascending Order Of Rating</h6>
 		</div>
+		<div class="project-img">
+			<img src="img/projects/Project3_e.png" alt="Project 03e" width="38%" />
+			<h6>Descending Order Of Rating</h6>
+		</div>
+		<div class="project-img">
+		<img src="img/projects/Project3_c.png" alt="Project 03c" width="80%" />
+			<h6>Mongo DB Implementation in Heroku</h6>
+		</div>
+		<!-- End project image -->
+	</div>
 </div>
 
 <div class="row">
