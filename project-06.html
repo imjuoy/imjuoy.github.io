@@ -57,7 +57,7 @@ Set the type and color theme here - the Pro version contains additional themes -
 		We used a <b><a href="https://www.particle.io">Particle Photon</a></b> as the IoT hardware which gave us access to IoT device cloud and acted as the primary IoT platform. We further connected the motion sensor with the particle Photon and then used the particle programming to publish messages (0-2047 if no motion is detected and 2048-4095 if motion is detected) to a local <b><a href="https://mosquitto.org">Mosquitto MQTT</a></b> topic. We also used a LED with the particle photon which would light up if motion was detected or otherwise remain off. The entire setup can be seen below.
 		</p>
 		<p>
-		Finally we designed a Java web application that would subscribe data from the Mosquitto topic and then based on the type of data generate alerts in a web page. To complete the end-to-end system design we also went ahead and implemented email features using SMTP to send emails to the user based on intrusion detection.The source code for the application can be found <a href="https://github.com/imjuoy/Intrusion-Detection-System-using-Passive-Infrared-Sensors-and-SMTP">here</a>.
+		Finally we designed a Java web application that would subscribe data from the Mosquitto topic and then based on the type of data generate alerts in a web page. To complete the end-to-end system design we also went ahead and implemented email features using SMTP to send emails to the user based on intrusion detection. The source code for the application can be found <a href="https://github.com/imjuoy/Intrusion-Detection-System-using-Passive-Infrared-Sensors-and-SMTP">here</a>.
 		</p>
 		<p>
 	    <h3>Technologies Used:</h3>	
