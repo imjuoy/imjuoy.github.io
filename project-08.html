@@ -23,8 +23,8 @@ Set the type and color theme here - the Pro version contains additional themes -
 <div class="row">
 	<div class="small-12 medium-12 large-12 small-centered columns">
 		<header>		
-			<h1><a href="index.html">Subhadeep Bhattacharyya</a></h1>
-			<h2><a href="index.html">SOFTWARE ENGINEER</a></h2>
+			<h1>Subhadeep Bhattacharyya</a></h1>
+			<h2>SOFTWARE ENGINEER</a></h2>
 			<!--
 			<div class="logo">
 				<a href="index.html"><img src="img/logo.png" alt="Your Name Here" /></a>
@@ -48,22 +48,22 @@ Set the type and color theme here - the Pro version contains additional themes -
 		<h2>PREDICTING FLIGHT DELAYS</h2>
 		<br>
 		<p>
-		As a part of this group project, we worked on <b>2006 Pittsburgh Airport data</b> collected from <b>Bureau Of Transportation</b> to determine important predictors that help predict flight delays out of Pittsburgh. 
+		As a part of this group project, we worked on <b>2006 Pittsburgh Airport data</b> collected from <b>Bureau Of Transportation</b> to determine important predictors that could help predict flight delays out of Pittsburgh in today's scenario.
 		</p>
 		<p>
-		First since the data contained more rows than required we cleaned the data using R. Once the data was cleaned we performed feature engineering on the data based on the source of the flight. The main logic behind using this feature was to check if flights that were delayed out of Pittsburgh was running late since the entire day. We also performed some exploratory analysis to generate interesting insights out of the data.
+		To get to the final prediction, we had to clean up the data to get rid of column's that were unnecessary. We further performed feature engineering on the resulting data to find flights that had delays before arriving to Pittsburgh. Once the feature engineering was completed, exploratory analysis was done in order to detect predictors that could be statistically significant.
 		</p>
 		<p>
-	    In addition to the android application, I also created a basic data analytics page which can be used to view most searched cities, most preferred sort parameters and would also maintain a log of all requests and response. The webpage is currently deployed into Heroku. You can view it <a href="https://enigmatic-bayou-74965.herokuapp.com/AnalyticsController">here.</a>
+	    Once possible predictors were decided, we went ahead with modelling. As a part of this project we used three supervised learning modelling techniques including decision trees and random forest. The primary reason behind using multiple models for predicting flight delays was to compare their accuracy. Finally we chose the model that had the highest Area Under Curve (AUC). With the help of the chosen model built using the data from 2006 (train data) we were able to predict delays in 2016 (test data) with more than 85% accuracy. </a>
+		</p>
+		<p>
+		Finally as a part of our analysis we also provided a classification confusion matrix thereby calculating specificity and sensitivity.	
 		</p>
 		<p>
 	    <h3>Technologies Used:</h3>	
 	    <ul>
-	    <li>HEROKU PAAS</li>
-	    <li>ANDROID NOUGAT</li>
-	    <li>MONGO DB</li>
-	    <li>SERVLET</li> 
-	    <li>REST</li>
+	    <li>R-Studio</li>
+	    <li>R</li>
 	    </ul>	
 		</p>	
 	</div>
@@ -85,32 +85,18 @@ Set the type and color theme here - the Pro version contains additional themes -
 		
 		<!-- Begin project image -->
 		<div class="project-img">
-			<img src="img/projects/Project3_a.png" alt="Project 03a"  width="38%" />
-			<h6>The selection parameters</h6>
+			<img src="img/projects/Project8_1.png" alt="Project 03a"  width="68%" />
+			<h6>Mean Delay w.r.t Carriers in 2006</h6>
 		</div>
 		<!-- End project image -->
 		
 		<!-- Begin project image -->
 		<div class="project-img">
-			<img src="img/projects/Project3_d.png" alt="Project 03b" width="38%" />
-			<h6>Cities served by the App</h6>
+			<img src="img/projects/Project8_2.png" alt="Project 03b" width="68%" />
+			<h6>Mean Delay w.r.t Carriers in 2016</h6>
 		</div>
 		<!-- End project image -->
 		
-		<!-- Begin project image -->
-		<div class="project-img">
-			<img src="img/projects/Project3_b.png" alt="Project 03b" width="38%" />
-			<h6>Ascending Order Of Rating</h6>
-		</div>
-		<div class="project-img">
-			<img src="img/projects/Project3_e.png" alt="Project 03e" width="38%" />
-			<h6>Descending Order Of Rating</h6>
-		</div>
-		<div class="project-img">
-		<img src="img/projects/Project3_c.png" alt="Project 03c" width="80%" />
-			<h6>Mongo DB Implementation in Heroku</h6>
-		</div>
-		<!-- End project image -->
 	</div>
 </div>
 
@@ -134,12 +120,40 @@ Set the type and color theme here - the Pro version contains additional themes -
 				<!--  ************************************************************************************ -->
 				
 			</ul>
-			<div class="social-icons">
-				<a href="https://www.linkedin.com/in/subhadeep-bhattacharyya-13168428/"><i class="fa fa-linkedin fa-2x"></i></a>
-				<a href="https://twitter.com/ImJuoy" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
-				<a href="http://www.facebook.com/Subhadeep.Bhattacharyya.15" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
-				<a href="http://www.instagram.com/imjuoy" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
-			</div>
+			<center>
+			<div class='links fade-in two'>
+      <a href='mailto:subhadeb@andrew.cmu.edu'>
+        <span class="fa-stack">
+          <i class='fa fa-circle fa-stack-2x'></i>
+          <i class='fa fa-envelope fa-stack-1x fa-inverse'></i>
+        </span>
+      </a>
+      <a href='http://www.facebook.com/Subhadeep.Bhattacharyya.15'>
+        <span class="fa-stack">
+          <i class='fa fa-circle fa-stack-2x'></i>
+          <i class='fa fa-facebook fa-stack-1x fa-inverse'></i>
+        </span>
+      </a>
+      <a href='http://github.com/imjuoy'>
+        <span class="fa-stack">
+          <i class='fa fa-circle fa-stack-2x'></i>
+          <i class='fa fa-github fa-stack-1x fa-inverse'></i>
+        </span>
+      </a>
+      <a href='http://linkedin.com/in/subhadeep-bhattacharyya-13168428/'>
+        <span class="fa-stack">
+          <i class='fa fa-circle fa-stack-2x'></i>
+          <i class='fa fa-linkedin fa-stack-1x fa-inverse'></i>
+        </span>
+      </a>
+      <a href='http://www.instagram.com/imjuoy'>
+        <span class="fa-stack">
+          <i class='fa fa-circle fa-stack-2x'></i>
+          <i class='fa fa-instagram fa-stack-1x fa-inverse'></i>
+        </span>
+      </a>
+    </div>
+    </center>
 		</footer>
 	</div>
 </div>
