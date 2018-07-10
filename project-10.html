@@ -45,12 +45,21 @@ Set the type and color theme here - the Pro version contains additional themes -
 
 <div class="row">
 	<div class="small-12 medium-7 large-7 columns">
-		<h2>AGGREGATOR OF AGGREGATORS</h2>
+		<h2>AGGERAGATOR RECOMMENDER</h2>
 		<p>
-		Data aggregators have taken over the world completely. From Yelp to FoodPanda, Expedia to TripAdvisor, platforms have emerged which has changed the way data is consumed and presented. However with the emergence of such data-rich platforms it becomes extremely necessary to vet and compare these platforms to understand and compare their correctness and find unconcious biases if any.
+		Restaurant discovery in a city is a difficult proposition for a diner with many things to consider -
+		Rating
+		Price points
+		Customer Reviews
+		Non-uniformity of the same restaurant listing across different sites 
+		We aimed to aggregate data across different sites (Yelp, Zomato, TripAdvisor) and compare restaurants on a common platform.
+		The source code can be viewed at: <a href="https://github.com/imjuoy/HungryGator">this link</a>
 		</p>
 		<p>
-		As a part of the project we tried to aggregate data from three different aggregators namely Trip Advisor, Yelp and Zomato. Once the data was accessed we cleaned the data, and then aggregated the data for quantitative as well as qualitative comparison's. Below are some of the important details of the project:
+		<h3>The what?</h3>
+		To  provide restaurant-goers a list of restaurants that accurately match their taste based on cuisine, popularity, reviews etc.
+		<h3>The how?</h3>
+		By mining and summarizing restaurant data from multiple restaurant discovery sites, we will be able to provide our users the most accurate information for a restaurant listing
 		</p>
 		<p>
 	    <h3>Data Sources:</h3>
@@ -61,20 +70,25 @@ Set the type and color theme here - the Pro version contains additional themes -
 	    </ul> 
 		</p>
 		<p>
-		<h3>Metrics for Comparison</h3>
+		<h3>6 Product Features:</h3>
 		<ul>
-		<li> PRICE DIFFERENCES</li>
-		<li> RATING DIFFERENCES</li>	
+		<li>Explore Top Restaurant Categories By Rating</li>
+		<li>Explore Top Restaurant Categories By Price</li>
+		<li>Explore TripAdvisor properties as Ratings (Converted Ranking to Ratings)</li>
+		<li>Compare Ratings between 2 OR 3 Review sites</li>
+		<li>View Top Review Comments by ZipCode (WordCloud)</li>
+		<li>Combine it all - Get Top 3 Recommended Restaurants for Zomato, Yelp, TripAdvisor for a ZipCode, based on Ratings & Price</li>	
 		</ul>	
 		</p>	
 		<p>
 	    <h3>Technologies Used:</h3>	
 	    <ul>
-	    <li>AWS EC2</li>
-	    <li>DOCKER CLI</li>
-	    <li>GOOGLE CLOUD PLATFORM</li>
-	    <li>AZURE</li> 
-	    <li>KUBERNETES</li>
+	    <li> Python 3</li>
+	    <li> NumPy, Seaborn, Matplotlib, Scipy, WordCloud</li>
+	    <li> Beautiful Soup</li>
+	    <li> Github</li>
+	    <li> Github Boards</li> 
+	    <li> Jupyter Notebooks</li>
 	    </ul>	
 		</p>	
 	</div>
@@ -84,7 +98,7 @@ Set the type and color theme here - the Pro version contains additional themes -
 				<li><strong>Role:</strong> Developer</li>
 				<li><strong>Event:</strong> Coursework </li>
 				<li><strong>Location:</strong> Carnegie Mellon University, Pittsburgh</li>
-				<li><strong>Year:</strong> Fall 2017</li>
+				<li><strong>Year:</strong> Spring 2018</li>
 			</ul>
 		</div>
 	</div>
